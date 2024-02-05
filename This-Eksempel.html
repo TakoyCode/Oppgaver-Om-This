@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oppgaver om 'This'</title>
+    <style>
+        body {
+            background-color: rgb(69, 69, 69);
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="aDiven" onclick="pushedLetter(this)">A</div>
+
+
+    <script>
+
+        let letterPressed = '';
+
+        function pushedLetter(htmlElement) {
+            //her kommer diven inn og ligger i variablen htmlElement
+
+            letterPressed = htmlElement.innerHTML;
+            //når vi har diven, kan vi hente ut alle egenskapene dens. 
+            //Her har vi hentet ut egenskapen "innerHTML" som er bokstaven i mellom HTML-tagsa
+
+            console.log(letterPressed);
+            // logger så ut til consollen hva innerhtml verdien inneholdt
+        }
+
+
+    </script>
+
+
+
+</body>
+
+</html>

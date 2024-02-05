@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Undervisningvideo-this</title>
+    <style>
+        body {
+            background-color: rgb(63, 63, 63);
+        }
+
+        .box {
+            height: 100px;
+            width: 100px;
+        }
+
+        .pink {
+            background-color: pink;
+        }
+
+        .red {
+            background-color: red;
+        }
+
+        .blue {
+            background-color: blue;
+        }
+
+        .green {
+            background-color: green;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="pink box" onclick="changeToGreen(this,'green')"></div>
+    <div class="red box" onclick="changeToGreen(this,'green')"></div>
+    <div class="blue box" onclick="changeToGreen(this,'green')"></div>
+
+
+    <script>
+
+        function changeToGreen(element, color) {
+            element.style.backgroundColor = color;
+            element.innerHTML = "hei";
+        }
+
+
+    </script>
+
+</body>
+
+</html>
